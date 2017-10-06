@@ -1,4 +1,4 @@
-    " General {
+   " General {
         if count(g:spf13_bundle_groups, 'general')
             Bundle 'scrooloose/nerdtree'
             UnBundle 'altercation/vim-colors-solarized'
@@ -7,25 +7,25 @@
             UnBundle 'tpope/vim-repeat'
             UnBundle 'rhysd/conflict-marker.vim'
             UnBundle 'jiangmiao/auto-pairs'
-            Bundle 'ctrlpvim/ctrlp.vim'
-            Bundle 'tacahiroy/ctrlp-funky'
+            UnBundle 'ctrlpvim/ctrlp.vim'
+            UnBundle 'tacahiroy/ctrlp-funky'
             UnBundle 'terryma/vim-multiple-cursors'
             UnBundle 'vim-scripts/sessionman.vim'
             UnBundle 'matchit.zip'
             if (has("python") || has("python3")) && exists('g:spf13_use_powerline') && !exists('g:spf13_use_old_powerline')
-                Bundle 'Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
+                UnBundle 'Lokaltog/powerline', {'rtp':'/powerline/bindings/vim'}
             elseif exists('g:spf13_use_powerline') && exists('g:spf13_use_old_powerline')
-                Bundle 'Lokaltog/vim-powerline'
+                UnBundle 'Lokaltog/vim-powerline'
             else
-                Bundle 'vim-airline/vim-airline'
-                Bundle 'vim-airline/vim-airline-themes'
+                UnBundle 'vim-airline/vim-airline'
+                UnBundle 'vim-airline/vim-airline-themes'
             endif
-            Bundle 'powerline/fonts'
+            UnBundle 'powerline/fonts'
             UnBundle 'bling/vim-bufferline'
-            Bundle 'easymotion/vim-easymotion'
-            Bundle 'jistr/vim-nerdtree-tabs'
+            UnBundle 'easymotion/vim-easymotion'
+            UnBundle 'jistr/vim-nerdtree-tabs'
             UnBundle 'flazz/vim-colorschemes'
-            Bundle 'mbbill/undotree'
+            UnBundle 'mbbill/undotree'
             UnBundle 'nathanaelkane/vim-indent-guides'
             if !exists('g:spf13_no_views')
                 UnBundle 'vim-scripts/restore_view.vim'
@@ -52,12 +52,12 @@
         if count(g:spf13_bundle_groups, 'programming')
             " Pick one of the checksyntax, jslint, or syntastic
             Bundle 'scrooloose/syntastic'
-            Bundle 'tpope/vim-fugitive'
+            UnBundle 'tpope/vim-fugitive'
             UnBundle 'mattn/webapi-vim'
             UnBundle 'mattn/gist-vim'
-            Bundle 'scrooloose/nerdcommenter'
+            UnBundle 'scrooloose/nerdcommenter'
             UnBundle 'tpope/vim-commentary'
-            Bundle 'godlygeek/tabular'
+            UnBundle 'godlygeek/tabular'
             UnBundle 'luochen1990/rainbow'
             if executable('ctags')
                 UnBundle 'majutsushi/tagbar'
@@ -83,10 +83,10 @@
             Bundle 'Shougo/neosnippet-snippets'
             Bundle 'honza/vim-snippets'
         elseif count(g:spf13_bundle_groups, 'neocomplete')
-            Bundle 'Shougo/neocomplete.vim.git'
-            Bundle 'Shougo/neosnippet'
-            Bundle 'Shougo/neosnippet-snippets'
-            Bundle 'honza/vim-snippets'
+            UnBundle 'Shougo/neocomplete.vim.git'
+            UnBundle 'Shougo/neosnippet'
+            UnBundle 'Shougo/neosnippet-snippets'
+            UnBundle 'honza/vim-snippets'
         endif
     " }
     " Scala {
